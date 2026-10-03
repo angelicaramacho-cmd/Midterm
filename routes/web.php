@@ -12,15 +12,13 @@ Route::get('/register', function () {
 });
 
 Route::post('/display', function (Request $request) {
-    $data = [
-        'fullname' => $request->input('fullname', 'N/A'),
-        'age'      => $request->input('age', 'N/A'),
-        'course'   => $request->input('course', 'N/A'),
-        'email'    => $request->input('email', 'N/A'),
-        'motto'    => $request->input('motto', 'No motto provided.'),
-    ];
-
-    return view('display', compact('data'));
+    return view('result', [
+        'name'   => $request->input('name'),
+        'age'    => $request->input('age'),
+        'course' => $request->input('course'),
+        'email'  => $request->input('email'),
+        'motto'  => $request->input('motto'),
+    ]);
 });
 
 Route::get('/about', function () {
