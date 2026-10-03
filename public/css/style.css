@@ -1,0 +1,64 @@
+:root {
+    --primary-coffee: #3C2A21;
+    --dark-roast: #1C0A00;
+    --cream-bg: #E5E5CB;
+    --card-cream: #D5CEA3;
+    --accent-roast: #D1512D;
+}
+
+body {
+    background-color: var(--cream-bg);
+    color: var(--dark-roast);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: var(--primary-coffee);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: var(--cream-bg);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(60, 42, 33, 0.15);
+}
+
+h1 {
+    color: var(--primary-coffee);
+}
+
+button, .btn {
+    background-color: var(--accent-roast);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .btn:hover {
+    background-color: var(--dark-roast);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: var(--primary-coffee);
+    color: var(--cream-bg);
+}
